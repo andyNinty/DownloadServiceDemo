@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="andy.lee.downloaddemo">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,11 +19,16 @@
         </activity>
 
         <service
-            android:name=".service.DownloadService"
+            android:name=".service.MyService"
             android:enabled="true"
             android:exported="true">
         </service>
         <service android:name=".service.MyIntentService"/>
+        <service
+            android:name=".service.DownloadService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
     </application>
 
 </manifest>

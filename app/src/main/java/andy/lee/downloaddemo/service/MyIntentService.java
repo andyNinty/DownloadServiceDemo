@@ -6,6 +6,7 @@ import android.util.Log;
 
 /**
  * andy.lee.downloaddemo.service
+ * intentService 执行完任务之后会自动destroy
  * Created by andy on 17-1-11.
  */
 
